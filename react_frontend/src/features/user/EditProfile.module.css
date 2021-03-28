@@ -1,0 +1,10 @@
+.imageArea {
+  text-align: center;
+}
+
+.nameArea {
+  text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  overflow: hidden;
+}

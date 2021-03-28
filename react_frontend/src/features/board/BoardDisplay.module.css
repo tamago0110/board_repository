@@ -1,0 +1,34 @@
+.boardContainer {
+  height: 90%;
+  width: 90%;
+  margin: auto;
+}
+
+.boardHeader {
+  color: lightgray;
+  height: 20%;
+  border-bottom: 2px groove lightgray;
+}
+
+.boardTitle {
+  text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.boardContent {
+  color: lightgray;
+  height: 70%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.buttonContainer {
+  color: lightgray;
+  height: 0%;
+}
+
+.createdBy {
+  text-align: right;
+}

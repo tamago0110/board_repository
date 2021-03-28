@@ -1,0 +1,38 @@
+version: "3"
+services:
+  react_frontend:
+    build:
+      context: .
+      dockerfile: ./docker/react/Dockerfile
+    container_name: react_container
+    tty: true
+    volumes:
+      - ./react_frontend:/usr/src/app/react_frontend
+    command: sh -c "yarn start"
+    ports:
+      - "3000:3000"
+  mysql_db:
+    build:
+      context: .
+      dockerfile: ./docker/mysql/Dockerfile
+    container_name: mysql_container
+    hostname: mysql_db
+    volumes:
+      - ./mysql_db/data:/var/lib/mysql
+    env_file:
+      - ./mysql_db/.env
+    ports:
+      - "3306:3306"
+  golang_api:
+    build:
+      context: .
+      dockerfile: ./docker/golang/Dockerfile
+    container_name: golang_container
+    tty: true
+    volumes:
+      - ./golang_api:/go/src/golang_api
+    command: sh -c "go run main.go"
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql_db

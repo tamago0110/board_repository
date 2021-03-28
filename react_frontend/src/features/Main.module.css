@@ -1,0 +1,51 @@
+.areaTitle {
+  text-align: center;
+}
+
+.appBoard {
+  background-color: #292f38;
+  height: 505px;
+  width: 80%;
+  min-width: 760px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.appLeadsList {
+  background-color: #292f38;
+  height: 200px;
+  width: 80%;
+  min-width: 380px;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.appBoardsList {
+  background-color: #292f38;
+  height: 200px;
+  width: 80%;
+  min-width: 380px;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.sentence {
+  text-align: center;
+  color: lightgray;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}

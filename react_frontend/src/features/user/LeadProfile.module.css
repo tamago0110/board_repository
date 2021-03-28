@@ -1,0 +1,17 @@
+.listStyle {
+  width: 100%;
+  margin-top: -6%;
+  margin-bottom: 6%;
+  margin-left: -10%;
+  list-style: none;
+}
+
+.leadName {
+  display: inline-block;
+  margin-left: 5%;
+  color: lightgray;
+  text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  overflow: hidden;
+}
