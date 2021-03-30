@@ -16,9 +16,11 @@ services:
       context: .
       dockerfile: ./docker/mysql/Dockerfile
     container_name: mysql_container
+    tty: true
     hostname: mysql_db
     volumes:
-      - ./mysql_db/data:/var/lib/mysql
+      - ./mysql_db/datalist:/var/lib/mysql
+      - ./docker/mysql/sql:/docker-entrypoint-initdb.d
     env_file:
       - ./mysql_db/.env
     ports:
