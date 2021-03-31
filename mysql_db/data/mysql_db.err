@@ -1,0 +1,12 @@
+2021-03-31T07:44:25.841419Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.23) starting as process 87
+2021-03-31T07:44:25.860840Z 0 [Warning] [MY-013242] [Server] --character-set-server: 'utf8' is currently an alias for the character set UTF8MB3, but will be an alias for UTF8MB4 in a future release. Please consider using UTF8MB4 in order to be unambiguous.
+2021-03-31T07:44:26.103326Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /var/lib/mysql/ is case insensitive
+2021-03-31T07:44:26.257020Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2021-03-31T07:44:28.896417Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2021-03-31T07:44:29.807877Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
+2021-03-31T07:44:31.021391Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2021-03-31T07:44:31.024140Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2021-03-31T07:44:31.055603Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2021-03-31T07:44:31.472639Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.23'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+2021-03-31T07:44:45.207951Z 10 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.23).
+2021-03-31T07:44:47.930325Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.23)  MySQL Community Server - GPL.

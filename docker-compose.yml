@@ -8,7 +8,7 @@ services:
     tty: true
     volumes:
       - ./react_frontend:/usr/src/app/react_frontend
-    command: sh -c "yarn start"
+    command: sh -c "yarn install && yarn start"
     ports:
       - "3000:3000"
   mysql_db:
@@ -19,7 +19,7 @@ services:
     tty: true
     hostname: mysql_db
     volumes:
-      - ./mysql_db/datalist:/var/lib/mysql
+      - ./mysql_db/data:/var/lib/mysql
       - ./docker/mysql/sql:/docker-entrypoint-initdb.d
     env_file:
       - ./mysql_db/.env
